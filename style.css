@@ -1,61 +1,85 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: none;
-    box-sizing: border-box;
+* 
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
 
-    background: transparent;
+  background: transparent;
 
-    font-family: inherit;
+  font-family: inherit;
 
-    text-decoration: none;
-  }
+  text-decoration: none;
+}
 
-  ol, ul, li {
-    list-style:none;
-    display:block;
-  }
+ol, ul, li {
+  list-style:none;
+  display:block;
+}
 
-  table {
-    border-collapse:collapse;
-    border-spacing:0
-  }
+table {
+  border-collapse:collapse;
+  border-spacing:0
+}
 
-  a img {
-    border: none
-  }
+a img {
+  border: none
+}
 
-  button, a {
-    cursor: pointer;
-    color: inherit
-  }
+button, a {
+  cursor: pointer;
+  color: inherit
+}
 
-  textarea {
-    resize: none
-  }
+textarea {
+  resize: none
+}
 
-  button, input, textarea, select {
-    appearance: none !important;
-    -webkit-appearance: none !important;
-    border-radius: 0
-  }
+button, input, textarea, select {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  border-radius: 0
+}
 
-  section{
-      min-height: 100vh; 
-      /*100% a szülő méretéhez viszonyítva (main)*/
-      /*100vh egy képernyő magassága*/
-  }
+section{
+  min-height: 100vh; 
+  /*100% a szülő méretéhez viszonyítva (main)*/
+  /*100vh egy képernyő magassága*/
+}
 
-  /*Menü gombja*/
-  #menu-btn{
-      position: fixed;      /*!!!! relatív a VIEWPORT-hoz (éppen látható rész)!!!!*/
-      top: 0;               /*0-nál nem kell mértékegység*/
-      right: 0;             /*ha lenne left: 0 -> left mindig piorítás*/
-      width: 40px;
-      height: 40px;
-      margin: 20px;
-      
-      background-color: black;
+/*Menü gombja*/
+#menu-btn{
+    position: fixed;      /*!!!! relatív a VIEWPORT-hoz (éppen látható rész)!!!!*/
+    top: 0;               /*0-nál nem kell mértékegység*/
+    right: 0;             /*ha lenne left: 0 -> left mindig piorítás*/
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    /*Z index határozza meg hogy melyik legyen elöl*/
+    z-index: 10;
+    
+    background-color: black;
 
-  }
+}
+
+/*ELEMEK DIZÁJNOLÁSA*/
+
+#menu-btn.clicked{
+  background-color:tomato;
+}
+
+#nav{
+  position: fixed;
+  top: 0;
+  right: -200px;    /*Kitoljuk hogy ne látszodjon*/
+  width: 200px;
+  height: 100vh;
+  z-index: 9;
+
+  background-color: royalblue;
+}
+
+#nav.clicked{
+  right: 0;
+}
