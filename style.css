@@ -49,7 +49,7 @@
 
   /*Menü gombja*/
   #menu-btn{
-      position: fixed;      /*relatív a VIEWPORT-hoz (éppen látható rész)!!!!*/
+      position: fixed;      /*!!!! relatív a VIEWPORT-hoz (éppen látható rész)!!!!*/
       top: 0;               /*0-nál nem kell mértékegység*/
       right: 0;             /*ha lenne left: 0 -> left mindig piorítás*/
       width: 40px;
