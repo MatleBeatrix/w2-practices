@@ -70,8 +70,12 @@ section{
 }
 */
 
-/*body.clicked #menu-btn{*/
-#bodyId.clicked #menu-btn{
+
+/*
+body.clicked #menu-btn
+ID elé kell a #
+*/
+#bodyID.clicked #menu-btn{
 
   background-color: tomato;
 }
