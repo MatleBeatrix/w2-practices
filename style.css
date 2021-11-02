@@ -56,23 +56,30 @@ section{
     width: 40px;
     height: 40px;
     margin: 20px;
-    /*Z index határozza meg hogy melyik legyen elöl*/
+    /*Z index határozza meg hogy melyik legyen elől*/
     z-index: 10;
     
     background-color: black;
-
 }
 
 /*ELEMEK DIZÁJNOLÁSA*/
 
+/*
 #menu-btn.clicked{
   background-color:tomato;
+}
+*/
+
+/*body.clicked #menu-btn{*/
+#bodyId.clicked #menu-btn{
+
+  background-color: tomato;
 }
 
 #nav{
   position: fixed;
   top: 0;
-  right: -200px;    /*Kitoljuk hogy ne látszodjon*/
+  right: -200px;    /*Kitoljuk, hogy ne látszodjon*/
   width: 200px;
   height: 100vh;
   z-index: 9;
@@ -80,6 +87,13 @@ section{
   background-color: royalblue;
 }
 
-#nav.clicked{
+/*body.clicked #nav*/
+#bodyID.clicked #nav{
   right: 0;
 }
+
+/*
+.randomID{
+  display: inline;
+}
+*/
